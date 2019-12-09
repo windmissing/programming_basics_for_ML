@@ -17,12 +17,15 @@
 # - header: My Header  # Will insert a header with no link in the sidebar
 
 - url: /readme
+  title: README
   not_numbered: true
 
 - url: /python/python
+  title: python
   not_numbered: true
 
 - url: /numpy/untitled
+  title: python
   not_numbered: true
 
 - url: /intro

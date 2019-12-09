@@ -16,7 +16,15 @@
 # - divider: true  # Will insert a divider in the sidebar
 # - header: My Header  # Will insert a header with no link in the sidebar
 
+- url: /README.md
+  not_numbered: true
 
+- url: /python/python
+  not_numbered: true
+
+- url: /numpy/Untitled
+  not_numbered: true
+  
 - url: /intro
   not_numbered: true
 

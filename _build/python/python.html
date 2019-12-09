@@ -1,0 +1,113 @@
+---
+interact_link: content/python/python.ipynb
+kernel_name: 
+kernel_path: content/python
+has_widgets: false
+title: |-
+  字典树，修改数据
+pagenum: 1
+prev_page:
+  url: /README.html
+next_page:
+  url: /numpy/Untitled.html
+suffix: .ipynb
+search: 
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div id="page-info"><div id="page-title">字典树，修改数据</div>
+</div>
+    
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">A</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>   <span class="c1"># key=a不存在时直接使用A[&#39;a&#39;]读值会出错</span>
+<span class="n">A</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>    <span class="c1"># key=a存在以后可以直接使用A[&#39;a&#39;]读值</span>
+<span class="n">A</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;a&#39;: 2}</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#23545;&#23383;&#20856;&#26641;&#25490;&#24207;">&#23545;&#23383;&#20856;&#26641;&#25490;&#24207;<a class="anchor-link" href="#&#23545;&#23383;&#20856;&#26641;&#25490;&#24207;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">operator</span>
+<span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span><span class="s1">&#39;d&#39;</span><span class="p">}</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span>   <span class="c1"># iterable -- 可迭代对象，在python2中使用A.iteritems()，在python3中使用A.items()</span>
+       <span class="n">key</span><span class="o">=</span><span class="n">operator</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span>   <span class="c1"># key -- 主要是用来进行比较的元素，指定可迭代对象中的一个元素来进行排序，这里指基于item的value进行排序</span>
+       <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>   <span class="c1"># reverse -- 排序规则，reverse = True 降序 ， reverse = False 升序（默认）。</span>
+<span class="c1"># 排序结果是一个list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(4, &#39;d&#39;), (2, &#39;c&#39;), (3, &#39;b&#39;), (1, &#39;a&#39;)]</pre>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    

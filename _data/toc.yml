@@ -20,9 +20,12 @@
   url: /readme
   not_numbered: true
 
-- url: /python/python
-  title: python
+- title: python
   not_numbered: true
+  expand_sections: true
+  sections:
+  - url: /python/dict
+  - url: /python/file/file
 
 - url: /numpy/untitled
   title: numpy

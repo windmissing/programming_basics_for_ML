@@ -21,15 +21,11 @@
   not_numbered: true
 
 - header: python
-  not_numbered: true
-  expand_sections: true
-  sections:
-  - url: /python/dict
-  - url: /python/file/file
+- url: /python/dict
+- url: /python/file/file
 
+- header: numpy
 - url: /numpy/untitled
-  title: numpy
-  not_numbered: true
 
 - url: /intro
   not_numbered: true

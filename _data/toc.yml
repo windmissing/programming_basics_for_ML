@@ -22,11 +22,14 @@
 
 - header: python
 - url: /python/dict
+  not_numbered: true
 - url: /python/file/file
+  not_numbered: true
 
 - header: numpy
 - url: /numpy/untitled
-
+  not_numbered: true
+  
 - url: /intro
   not_numbered: true
 

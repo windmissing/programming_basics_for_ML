@@ -20,7 +20,7 @@
   url: /readme
   not_numbered: true
 
-- title: python
+- header: python
   not_numbered: true
   expand_sections: true
   sections:

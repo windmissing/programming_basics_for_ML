@@ -27,10 +27,15 @@
   not_numbered: true
 
 - header: numpy
-- url: /numpy/untitled
+- url: /numpy/numpy
+  not_numbered: true
+
+- header: matplotlib
+- url: /matplotlib/matplotlib
   not_numbered: true
 
 - header: Jupyter-book Guide
+
 - url: /intro
   not_numbered: true
 

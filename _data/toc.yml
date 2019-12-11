@@ -29,7 +29,8 @@
 - header: numpy
 - url: /numpy/untitled
   not_numbered: true
-  
+
+- header: Jupyter-book Guide
 - url: /intro
   not_numbered: true
 

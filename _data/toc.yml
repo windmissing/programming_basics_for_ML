@@ -25,9 +25,13 @@
   not_numbered: true
 - url: /python/file/file
   not_numbered: true
+- url: /python/client
+  not_numbered: true
 
 - header: numpy
-- url: /numpy/numpy
+- url: /numpy/onearray
+  not_numbered: true
+- url: /numpy/arrayandvector
   not_numbered: true
 
 - header: matplotlib

@@ -21,6 +21,8 @@
   not_numbered: true
 
 - header: python
+- url: /python/string
+  not_numbered: true
 - url: /python/dict
   not_numbered: true
 - url: /python/file/file
@@ -30,6 +32,8 @@
 
 - header: numpy
 - url: /numpy/onearray
+  not_numbered: true
+- url: /numpy/TwoObjectWithSameDimension
   not_numbered: true
 - url: /numpy/arrayandvector
   not_numbered: true

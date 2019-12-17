@@ -29,7 +29,7 @@
   not_numbered: true
 - url: /python/set
   not_numbered: true
-  - url: /python/file/file
+- url: /python/file/file
   not_numbered: true
 - url: /python/client
   not_numbered: true

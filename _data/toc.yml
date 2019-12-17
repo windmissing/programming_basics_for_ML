@@ -23,9 +23,13 @@
 - header: python
 - url: /python/string
   not_numbered: true
+- url: /python/list
+  not_numbered: true
 - url: /python/dict
   not_numbered: true
-- url: /python/file/file
+- url: /python/set
+  not_numbered: true
+  - url: /python/file/file
   not_numbered: true
 - url: /python/client
   not_numbered: true

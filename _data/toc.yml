@@ -43,7 +43,9 @@
   not_numbered: true
 
 - header: matplotlib
-- url: /matplotlib/matplotlib
+- url: /matplotlib/scatter
+  not_numbered: true
+- url: /matplotlib/tree
   not_numbered: true
 
 - header: Jupyter-book Guide

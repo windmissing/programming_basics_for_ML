@@ -29,6 +29,8 @@
   not_numbered: true
 - url: /python/set
   not_numbered: true
+- url: /python/function
+  not_numbered: true
 - url: /python/file/file
   not_numbered: true
 - url: /python/client
@@ -44,6 +46,8 @@
 
 - header: matplotlib
 - url: /matplotlib/scatter
+  not_numbered: true
+- url: /matplotlib/frame
   not_numbered: true
 - url: /matplotlib/tree
   not_numbered: true

@@ -31,6 +31,8 @@
   not_numbered: true
 - url: /python/function
   not_numbered: true
+- url: /python/lambda
+  not_numbered: true
 - url: /python/file/file
   not_numbered: true
 - url: /python/client
@@ -42,6 +44,8 @@
 - url: /numpy/TwoObjectWithSameDimension
   not_numbered: true
 - url: /numpy/arrayandvector
+  not_numbered: true
+- url: /numpy/random
   not_numbered: true
 
 - header: matplotlib

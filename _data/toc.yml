@@ -33,6 +33,8 @@
   not_numbered: true
 - url: /python/lambda
   not_numbered: true
+- url: /python/exception
+  not_numbered: true
 - url: /python/file/file
   not_numbered: true
 - url: /python/client

@@ -41,6 +41,8 @@
   not_numbered: true
 
 - header: numpy
+- url: /numpy/value
+  not_numbered: true
 - url: /numpy/onearray
   not_numbered: true
 - url: /numpy/TwoObjectWithSameDimension

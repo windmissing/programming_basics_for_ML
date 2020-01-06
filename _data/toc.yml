@@ -57,6 +57,8 @@
 - header: matplotlib
 - url: /matplotlib/scatter
   not_numbered: true
+- url: /matplotlib/plot
+  not_numbered: true
 - url: /matplotlib/frame
   not_numbered: true
 - url: /matplotlib/tree

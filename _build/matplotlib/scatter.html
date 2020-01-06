@@ -5,9 +5,9 @@ kernel_path: content/matplotlib
 has_widgets: false
 title: |-
   绘制散点图
-pagenum: 11
+pagenum: 16
 prev_page:
-  url: /numpy/arrayandvector.html
+  url: /numpy/matrix.html
 next_page:
   url: /matplotlib/frame.html
 suffix: .ipynb
@@ -245,16 +245,30 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 
 <div class="jb_cell">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#32472;&#21046;&#22278;&#29615;">&#32472;&#21046;&#22278;&#29615;<a class="anchor-link" href="#&#32472;&#21046;&#22278;&#29615;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
-    <span class="n">func</span><span class="o">.</span><span class="n">aa</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">func</span><span class="o">.</span><span class="n">aa</span><span class="p">)</span>
-
-<span class="n">func</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1"># 0,0代表坐标</span>
+<span class="c1"># s=150是大小</span>
+<span class="c1"># c代表填充颜色，如果c=&#39;none&#39;表示无填充</span>
+<span class="c1"># edgecolor代表边框颜色，默认没有颜色。</span>
+<span class="c1"># 无填充颜色+有边框颜色就是圆环的效果</span>
+<span class="c1"># linewidth代表边框的粗细程度</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;#AB3319&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
 </pre></div>
 
     </div>
@@ -267,10 +281,24 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 <div class="jb_output_wrapper }}">
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;</pre>
 </div>
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_10_1.png"
+>
+</div>
+
 </div>
 </div>
 </div>

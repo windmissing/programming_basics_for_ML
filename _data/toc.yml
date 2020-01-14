@@ -55,6 +55,8 @@
   not_numbered: true
 - url: /numpy/matrix
   not_numbered: true
+- url: /numpy/linalg
+  not_numbered: true
 
 - header: matplotlib
 - url: /matplotlib/scatter

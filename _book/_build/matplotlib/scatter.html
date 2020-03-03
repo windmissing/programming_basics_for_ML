@@ -1,0 +1,367 @@
+---
+interact_link: content/matplotlib/scatter.ipynb
+kernel_name: python3
+kernel_path: content/matplotlib
+has_widgets: false
+title: |-
+  绘制散点图
+pagenum: 17
+prev_page:
+  url: /numpy/matrix.html
+next_page:
+  url: /matplotlib/plot.html
+suffix: .ipynb
+search: 
+
+comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
+---
+
+    <main class="jupyter-page">
+    <div id="page-info"><div id="page-title">绘制散点图</div>
+</div>
+    
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#32472;&#21046;&#25955;&#28857;&#22270;">&#32472;&#21046;&#25955;&#28857;&#22270;<a class="anchor-link" href="#&#32472;&#21046;&#25955;&#28857;&#22270;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dataSet</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>   <span class="c1"># 必须是np.array类型，普通的数组类型不可以</span>
+          <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span>
+          <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span>
+          <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 方法一</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataSet</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># 参数为坐标</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_3_0.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 方法二</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>   <span class="c1"># If no positional arguments are passed, defaults to (1, 1, 1)或(111)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataSet</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_4_0.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#32472;&#21046;&#19981;&#21516;&#22823;&#23567;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;">&#32472;&#21046;&#19981;&#21516;&#22823;&#23567;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;<a class="anchor-link" href="#&#32472;&#21046;&#19981;&#21516;&#22823;&#23567;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 参数1，2是坐标，参数3是大小。大小乘以15是为了让效果更明显</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataSet</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">s</span><span class="o">=</span><span class="mi">15</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_6_0.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#32472;&#21046;&#19981;&#21516;&#39068;&#33394;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;">&#32472;&#21046;&#19981;&#21516;&#39068;&#33394;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;<a class="anchor-link" href="#&#32472;&#21046;&#19981;&#21516;&#39068;&#33394;&#30340;&#25955;&#28857;&#22270;&#65292;&#20197;&#26041;&#27861;&#19968;&#20026;&#20363;&#65292;&#26041;&#27861;&#20108;&#31867;&#20284;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 参数1，2是坐标，参数3是颜色，此时必须标明&quot;c=&quot;</span>
+<span class="c1"># plt.scatter(x,y,c)</span>
+<span class="c1"># 参数1，2是坐标，参数3是大小，参数4是颜色，此时不需要标明参数名</span>
+<span class="c1"># plt.scatter(x,y,s,c)</span>
+
+<span class="c1"># 颜色*15是为了让效果更明显</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataSet</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="mi">15</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">dataSet</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_8_0.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#32472;&#21046;&#22278;&#29615;">&#32472;&#21046;&#22278;&#29615;<a class="anchor-link" href="#&#32472;&#21046;&#22278;&#29615;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1"># 0,0代表坐标</span>
+<span class="c1"># s=150是大小</span>
+<span class="c1"># c代表填充颜色，如果c=&#39;none&#39;表示无填充</span>
+<span class="c1"># edgecolor代表边框颜色，默认没有颜色。</span>
+<span class="c1"># 无填充颜色+有边框颜色就是圆环的效果</span>
+<span class="c1"># linewidth代表边框的粗细程度</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;#AB3319&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;function matplotlib.pyplot.show(*args, **kw)&gt;</pre>
+</div>
+
+</div>
+</div>
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_10_1.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#19981;&#21516;&#30340;&#24418;&#29366;">&#19981;&#21516;&#30340;&#24418;&#29366;<a class="anchor-link" href="#&#19981;&#21516;&#30340;&#24418;&#29366;"> </a></h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jb_cell">
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1"># 0,0代表坐标</span>
+<span class="c1"># s=150是大小</span>
+<span class="c1"># c代表填充颜色，如果c=&#39;none&#39;表示无填充</span>
+<span class="c1"># edgecolor代表边框颜色，默认没有颜色。</span>
+<span class="c1"># 无填充颜色+有边框颜色就是圆环的效果</span>
+<span class="c1"># linewidth代表边框的粗细程度</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;+&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="jb_output_wrapper }}">
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="../images/matplotlib/scatter_12_0.png"
+>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+ 
+
+
+    </main>
+    

@@ -8,10 +8,8 @@ install:
 #  - npm install gitbook-cli
 #  - jupyter-book build .
 
-
-after_script:
+script:
   - jupyter-book build .
-
   - export MINICONDA=$HOME/miniconda
   - echo "export PATH=$MINICONDA/bin:$PATH" >> $BASH_ENV
   - source $BASH_ENV
@@ -27,6 +25,8 @@ after_script:
   - conda install -c conda-forge rb-github-pages
   - bundle install
   - bundle exec jekyll build --baseurl /0/html/
+
+deploy:
   - cd ./_build/
   - git init
   - git config usr.name "windmissing"

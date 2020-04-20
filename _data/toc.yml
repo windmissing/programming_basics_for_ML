@@ -18,7 +18,7 @@
 
 # Top-level page
 - title: Home
-  url: /intro
+  url: /index
   not_numbered: true
 
 # Adds a searchbar link

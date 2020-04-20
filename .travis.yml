@@ -11,7 +11,7 @@ install:
 
 script:
   - make clean
-  - jupyter-book upgrade /home/travis/build/windmissing/programming_basics_for_ML
+  - jupyter-book upgrade /home/travis/build/${GH_REF}
   - make book
 
 deploy:

@@ -16,10 +16,15 @@
 # - divider: true  # Will insert a divider in the sidebar
 # - header: My Header  # Will insert a header with no link in the sidebar
 
-- title: README
-  url: /readme
+# Top-level page
+- title: Home
+  url: /README
   not_numbered: true
 
+# Adds a searchbar link
+- title: Search
+  search: true
+  
 - header: python
 - url: /python/type
   not_numbered: true

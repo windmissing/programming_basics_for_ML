@@ -1,28 +1,21 @@
-language: python
+language: node_js
 node_js:
-  - '3.7-stretch'
+  - '8.9.1'
 
 # S: Build Lifecycle
 install:
-  - pip install jupyter-book
-#  - pip install -r requirements.txt
-#  - npm install gitbook-cli
-#  - jupyter-book build .
+  - npm install gitbook-cli
 
-script:
-  - make clean
-  - jupyter-book upgrade /home/travis/build/${GH_REF}
-  - make book
-
-deploy:
-  local_dir: _build
-  provider: pages
-  target-branch: gh-pages
-  skip-cleanup: true
-  github-token: ${test_token}  # Set in travis-ci.org dashboard, marked secure
-  keep-history: false
-  on:
-    branch: master
+after_script:
+  - gitbook install
+  - gitbook build
+  - cd ./_book
+  - git init
+  - git config usr.name "windmissing"
+  - git config user.email "${USER_EMAIL}"
+  - git add .
+  - git commit -m "publish gitbook"
+  - git push --force --quiet "https://${test_token}@${GH_REF}" master:gh-pages
 
 branchs:
   only:

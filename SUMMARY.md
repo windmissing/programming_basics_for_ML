@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * python
-    * [type](numpy/type.md)
+    * [type](python/type.md)
 * numpy
 * matplotlib

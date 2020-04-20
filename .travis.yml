@@ -7,7 +7,6 @@ install:
   - npm install gitbook-cli
 
 after_script:
-  - git push
   - gitbook install
   - gitbook build
   - cd ./_book

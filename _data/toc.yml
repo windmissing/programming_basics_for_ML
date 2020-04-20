@@ -24,7 +24,7 @@
 # Adds a searchbar link
 - title: Search
   search: true
-  
+
 - header: python
 - url: /python/type
   not_numbered: true
@@ -50,11 +50,11 @@
 - header: numpy
 - url: /numpy/value
   not_numbered: true
-- url: /numpy/onearray
+- url: /numpy/OneArray
   not_numbered: true
 - url: /numpy/TwoObjectWithSameDimension
   not_numbered: true
-- url: /numpy/arrayandvector
+- url: /numpy/ArrayAndVector
   not_numbered: true
 - url: /numpy/random
   not_numbered: true

@@ -15,6 +15,7 @@ script:
   - make book
 
 deploy:
+  local_dir: _build
   provider: pages
   target-branch: gh-pages
   skip-cleanup: true

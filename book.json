@@ -2,19 +2,11 @@
     "gitbook": "3.2.3",
     "author": "windmissing",
     "plugins": [
-        "katex",
-        "katex-plus",
-        "alerts",
         "mygitalk",
         "github",
         "github-buttons",
-        "splitter",
         "-sharing", "sharing-plus",
-        "donate",
-        "copy-code-button",
-        "anchor-navigation-ex",
-        "sectionx",
-        "click-reveal"
+        "donate"
     ],
     "pluginsConfig": {
         "mygitalk": {

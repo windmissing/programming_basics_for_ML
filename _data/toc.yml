@@ -16,64 +16,6 @@
 # - divider: true  # Will insert a divider in the sidebar
 # - header: My Header  # Will insert a header with no link in the sidebar
 
-# Top-level page
-- title: Home
-  url: /index
-  not_numbered: true
-
-# Adds a searchbar link
-- title: Search
-  search: true
-
-- header: python
-- url: /python/type
-  not_numbered: true
-- url: /python/string
-  not_numbered: true
-- url: /python/list
-  not_numbered: true
-- url: /python/dict
-  not_numbered: true
-- url: /python/set
-  not_numbered: true
-- url: /python/function
-  not_numbered: true
-- url: /python/lambda
-  not_numbered: true
-- url: /python/exception
-  not_numbered: true
-- url: /python/file/file
-  not_numbered: true
-- url: /python/client
-  not_numbered: true
-
-- header: numpy
-- url: /numpy/value
-  not_numbered: true
-- url: /numpy/OneArray
-  not_numbered: true
-- url: /numpy/TwoObjectWithSameDimension
-  not_numbered: true
-- url: /numpy/ArrayAndVector
-  not_numbered: true
-- url: /numpy/random
-  not_numbered: true
-- url: /numpy/matrix
-  not_numbered: true
-- url: /numpy/linalg
-  not_numbered: true
-
-- header: matplotlib
-- url: /matplotlib/scatter
-  not_numbered: true
-- url: /matplotlib/plot
-  not_numbered: true
-- url: /matplotlib/frame
-  not_numbered: true
-- url: /matplotlib/tree
-  not_numbered: true
-
-- header: Jupyter-book Guide
 
 - url: /intro
   not_numbered: true
@@ -119,6 +61,8 @@
     - url: /features/math
       not_numbered: true
     - url: /features/titles
+      not_numbered: true
+    - url: /features/citations
       not_numbered: true
     - url: /features/jupytext
       not_numbered: true

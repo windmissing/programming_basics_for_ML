@@ -4,36 +4,24 @@ node_js:
 
 # S: Build Lifecycle
 install:
-  - pip install -r requirements.txt
+  - pip install jupyter-book
+#  - pip install -r requirements.txt
 #  - npm install gitbook-cli
 #  - jupyter-book build .
 
 script:
-  - jupyter-book build .
-  - export MINICONDA=$HOME/miniconda
-  - echo "export PATH=$MINICONDA/bin:$PATH" >> $BASH_ENV
-  - source $BASH_ENV
-  - hash -r
-  - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-  - bash miniconda.sh -b -f -p $MINICONDA
-  - conda config --set always_yes yes
-  - conda update conda
-  - conda info -a
-  - conda create -n testenv python=3.7.0
-  - source activate testenv
-  - rm miniconda.sh
-  - conda install -c conda-forge rb-github-pages
-  - bundle install
-  - bundle exec jekyll build --baseurl /0/html/
+  - make clean
+  - jupyter-book upgrade /home/travis/build/windmissing/programming_basics_for_ML
+  - make book
 
 deploy:
-  - cd ./_build/
-  - git init
-  - git config usr.name "windmissing"
-  - git config user.email "${USER_EMAIL}"
-  - git add .
-  - git commit -m "publish gitbook"
-  - git push --force --quiet "https://${test_token}@${GH_REF}" master:gh-pages
+  provider: pages
+  target-branch: gh-pages
+  skip-cleanup: true
+  github-token: ${test_token}  # Set in travis-ci.org dashboard, marked secure
+  keep-history: false
+  on:
+    branch: master
 
 branchs:
   only:

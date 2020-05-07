@@ -10,4 +10,5 @@
 * [pandas](pandas/pandas.md)
 * matplotlib
     * [折线图](matplotlib/plot.md)
+    * [存储](matplotlib/store.md)
 * [skimage](skimage/skimage.md)

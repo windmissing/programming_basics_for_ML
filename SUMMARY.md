@@ -7,6 +7,7 @@
     * [文件操作](python/file.md)
     * [一个从读文件到生成样本的例子](python/fileexample.md)
     * [time](python/time.md)
+    * [random](python/random.md)
     * [debug](python/sys.md)
 * numpy
     * [生成随机数](numpy/random.md)
@@ -14,4 +15,6 @@
 * matplotlib
     * [折线图](matplotlib/plot.md)
     * [存储](matplotlib/store.md)
-* [skimage](skimage/skimage.md)
+* 图像处理
+    * [skimage](skimage/skimage.md)
+    * [cv](skimage/cv.md)

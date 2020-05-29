@@ -9,11 +9,15 @@
     * [一个从读文件到生成样本的例子](python/fileexample.md)
     * [time](python/time.md)
     * [random](python/random.md)
+    * [有用的函数](python/UsefulFunctions.md)
     * [collections](python/collections.md)
     * [debug](python/sys.md)
 * numpy
     * [生成随机数](numpy/random.md)
-* [pandas](pandas/pandas.md)
+* pandas
+    * [数据统计](pandas/FileAnalyse.md)
+    * [读数据](pandas/ReadData.md)
+    * [写数据](pandas/WriteData.md)
 * matplotlib
     * [折线图](matplotlib/plot.md)
     * [存储](matplotlib/store.md)

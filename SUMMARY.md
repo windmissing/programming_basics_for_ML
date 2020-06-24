@@ -14,6 +14,8 @@
     * [debug](python/sys.md)
 * numpy
     * [生成随机数](numpy/random.md)
+    * [vector上的操作](numpy/OneVector.md)
+    * [Array上的操作](numpy/OneArray.md)
 * pandas
     * [数据统计](pandas/FileAnalyse.md)
     * [读数据](pandas/ReadData.md)
@@ -25,4 +27,9 @@
     * [skimage](skimage/skimage.md)
     * [cv](skimage/cv.md)
     * [图像增强](skimage/Albumentations.md)
-* [pytorch](pytorch/pytorch.md)
+* sklearn
+    * [metrics](sklearn/Metrics.md)
+* pytorch
+    * [pytorch](pytorch/pytorch.md)
+    * [图像增强](pytorch/transforms.md)
+    * [重用经典模型](pytorch/Models.md)

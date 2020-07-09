@@ -16,6 +16,8 @@
     * [生成随机数](numpy/random.md)
     * [vector上的操作](numpy/OneVector.md)
     * [Array上的操作](numpy/OneArray.md)
+    * [Array和Vector之间的操作](numpy/ArrayVector.md)
+    * [两个同维度对象之间的操作](numpy/TwoObjectWithSameDimension.md)
 * pandas
     * [数据统计](pandas/FileAnalyse.md)
     * [读数据](pandas/ReadData.md)

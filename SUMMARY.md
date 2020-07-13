@@ -14,8 +14,10 @@
     * [debug](python/sys.md)
 * numpy
     * [生成随机数](numpy/random.md)
+    * [创建对象](numpy/Create.md)
     * [vector上的操作](numpy/OneVector.md)
     * [Array上的操作](numpy/OneArray.md)
+    * [对所有结构通用的操作](numpy/Common.md)
     * [Array和Vector之间的操作](numpy/ArrayVector.md)
     * [两个同维度对象之间的操作](numpy/TwoObjectWithSameDimension.md)
 * pandas

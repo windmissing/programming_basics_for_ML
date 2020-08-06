@@ -24,6 +24,11 @@
     * [数据统计](pandas/FileAnalyse.md)
     * [读数据](pandas/ReadData.md)
     * [写数据](pandas/WriteData.md)
+    * [创建数据](pandas/CreateData.md)
+    * [选择数据](pandas/SelectData.md)
+    * [拼接数据](pandas/Concatenation.md)
+    * [处理丢失数据](pandas/MissingData.md)
+    * [绘制数据](pandas/PlotData.md)
 * matplotlib
     * [折线图](matplotlib/plot.md)
     * [存储](matplotlib/store.md)

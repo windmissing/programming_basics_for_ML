@@ -21,7 +21,7 @@
     * [Array和Vector之间的操作](numpy/ArrayVector.md)
     * [两个同维度对象之间的操作](numpy/TwoObjectWithSameDimension.md)
 * pandas
-    * [数据统计](pandas/FileAnalyse.md)
+    * [文件操作、数据统计](pandas/FileAnalyse.md)
     * [读数据](pandas/ReadData.md)
     * [写数据](pandas/WriteData.md)
     * [创建数据](pandas/CreateData.md)

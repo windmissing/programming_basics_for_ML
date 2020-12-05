@@ -13,6 +13,7 @@
     * [collections](python/collections.md)
     * [debug](python/sys.md)
 * numpy
+    * [数据类型](numpy/Type.md)
     * [生成随机数](numpy/random.md)
     * [创建对象](numpy/Create.md)
     * [vector上的操作](numpy/OneVector.md)

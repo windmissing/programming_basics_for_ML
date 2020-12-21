@@ -26,6 +26,7 @@
     * [文件操作、数据统计](pandas/FileAnalyse.md)
     * [读数据](pandas/ReadData.md)
     * [写数据](pandas/WriteData.md)
+    * [处理数据](pandas/HandlerData.md)
     * [创建数据](pandas/CreateData.md)
     * [选择数据](pandas/SelectData.md)
     * [拼接数据](pandas/Concatenation.md)
@@ -46,6 +47,7 @@
     * [重用经典模型](pytorch/Models.md)
 * tensorflow - keras
     * [tensorflow](keras/tensorflow.md)
+    * [预处理 - padding和trunicate](keras/preprocessing.md)
     * [datasets](keras/datasets.md)
     * [序列问题](keras/sequences.md)
     * [模型](keras/model.md)

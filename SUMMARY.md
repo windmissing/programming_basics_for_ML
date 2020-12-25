@@ -51,5 +51,6 @@
     * [datasets](keras/datasets.md)
     * [序列问题](keras/sequences.md)
     * [模型](keras/model.md)
+    * [LSTM](keras/LSTM.md)
     * [compile](keras/compile.md)
     * [fit, evaluate, predict](keras/fit.md)

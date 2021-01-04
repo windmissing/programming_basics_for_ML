@@ -5,6 +5,7 @@
     * [全局变量](python/global.md)
     * [type](python/type.md)
     * [string](python/string.md)
+    * [字典](python/dict.md)
     * [文件操作](python/file.md)
     * [一个从读文件到生成样本的例子](python/fileexample.md)
     * [time](python/time.md)

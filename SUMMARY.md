@@ -52,9 +52,17 @@
     * [预处理 - padding和trunicate](keras/preprocessing.md)
     * [datasets](keras/datasets.md)
     * [序列问题](keras/sequences.md)
-    * [模型](keras/model.md)
-    * [LSTM](keras/LSTM.md)
-    * [compile](keras/compile.md)
+    * 模型
+        * [定义模型的三种方法](keras/models/define.md)
+        * [模型](keras/models/model.md)
+    * layers
+        * [LSTM层的参数 - return_sequences和return_state](keras/layers/LstmReturn.md)
+        * [LSTM](keras/layers/LSTM.md)
+        * [Softmax](keras/layers/Softmax.md)
+    * compile
+        * [compile](keras/compile/compile.md)
+        * [自定义的compile过程](keras/compile/GradientTape.md)
+        * [损失函数](keras/compile/losses.md)
     * [fit, evaluate, predict](keras/fit.md)
     * 接口比较
         * [Conv2D](keras/Interface/Conv2D.md)

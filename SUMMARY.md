@@ -50,12 +50,12 @@
     * [重用经典模型](pytorch/Models.md)
 * tensorflow - keras
     * [tensorflow](keras/tensorflow.md)
-    * [预处理 - padding和trunicate](keras/preprocessing.md)
+    * [预处理 - tokenize、padding和trunicate](keras/preprocessing.md)
     * [datasets](keras/datasets.md)
-    * [序列问题](keras/sequences.md)
     * 模型
         * [定义模型的三种方法](keras/models/define.md)
         * [模型](keras/models/model.md)
+        * [模型的存储与读取](keras/models/load_and_save.md)
     * layers
         * [LSTM层的参数 - return_sequences和return_state](keras/layers/LstmReturn.md)
         * [LSTM](keras/layers/LSTM.md)
@@ -64,6 +64,9 @@
         * [compile](keras/compile/compile.md)
         * [自定义的compile过程](keras/compile/GradientTape.md)
         * [损失函数](keras/compile/losses.md)
-    * [fit, evaluate, predict](keras/fit.md)
+    * fit
+        * [fit, evaluate, predict](keras/fit/fit.md)
+        * [多线程](keras/fit/thread.md)
+        * [回调函数](keras/fit/callbacks.md)
     * 接口比较
         * [Conv2D](keras/Interface/Conv2D.md)

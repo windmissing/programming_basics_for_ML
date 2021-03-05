@@ -6,3 +6,6 @@ node_modules
 _book
 _build
 .DS_Store
+*.npz
+*.json
+*.h5

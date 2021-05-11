@@ -9,3 +9,4 @@ _build
 *.npz
 *.json
 *.h5
+events.out.*
